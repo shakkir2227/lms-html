@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update course</title>
+</head>
+
+<body>
+    <header>
+        <img style="width: 200px" src="./assets/logo-4.png" alt="logo" />
+    </header>
+
+    <main>
+        <div>
+            <h2>Update Course</h2>
+            <form action="">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="description">Description:</label>
+                <textarea name="description" id="description" required></textarea>
+
+                <label for="subject">Select subject: </label>
+                <select name="subject" id="subject" required>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="physics">Physics</option>
+                </select>
+
+                <label for="course-thumbnail">Thumbnail:</label>
+                <input type="file" name="course-thumbnail" id="course-thumbnail" required></input>
+
+                <label for="objective1">Objective 1: </label>
+                <input type="text" id="objective1" name="objective1" required>
+
+                <label for="objective2">Objective 2: </label>
+                <input type="text" id="objective2" name="objective2" required>
+
+                <label for="objective3">Objective 3: </label>
+                <input type="text" id="objective3" name="objective3" required>
+
+                <label for="lesson1Title">Lesson 1 Title: </label>
+                <input type="text" id="lesson1Title" name="lesson1Title" required>
+
+                <button type="button">Add another lesson</button>
+
+                <button type="submit">Update course</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Learn Plus @ 2024</p>
+    </footer>
+</body>
+
+</html>
