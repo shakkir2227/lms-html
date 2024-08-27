@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Create course</title>
 </head>
 
 <body>
     <header>
-        <img style="width: 200px" src="./assets/logo-4.png" alt="logo" />
+        <img class="logo" id="logo-3" src="./assets/logo-4.png" alt="logo" />
     </header>
 
     <main>
-        <div>
+        <div class="course-form-container">
             <h2>Create Course</h2>
-            <form action="">
+            <form action="" class="course-form" id="course-registration-form">
                 <label for="title">Title:</label>
                 <input type="text" id="title" name="title" required>
 
@@ -43,9 +44,9 @@
                 <label for="lesson1Title">Lesson 1 Title: </label>
                 <input type="text" id="lesson1Title" name="lesson1Title" required>
 
-                <button type="button" >Add another lesson</button>
+                <button id="new-lesson-btn" type="button">Add another lesson</button>
 
-                <button type="submit">Create course</button>
+                <button id="create-course-btn" type="submit">Create course</button>
             </form>
         </div>
     </main>

@@ -4,22 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Sign up</title>
 </head>
 
 <body>
     <header>
-        <img style="width: 200px" src="./assets/logo-4.png" alt="logo" />
+        <img class="logo" src="./assets/logo-4.png" alt="logo" />
     </header>
 
     <main>
-        <div>
+        <div class="auth-container" id="user-register-container">
             <h2>Sign up</h2>
             <p>Get Started: Ignite Your Learning Journey</p>
-            <form>
+            <form class="auth-form" id="user-register-form">
                 <label for="name">Name: </label>
                 <input type="text" id="name" required>
-        
+
                 <label for="email">Email: </label>
                 <input type="email" id="email" required>
 
@@ -27,6 +28,7 @@
                 <input type="password" id="password" required>
 
                 <button type="submit">Sign up</button>
+                <span class="login-intro" id="user-login-intro">Already on Learn Plus? Login Now.</span>
             </form>
         </div>
     </main>

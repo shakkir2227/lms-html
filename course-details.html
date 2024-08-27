@@ -4,36 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <title>Course</title>
 </head>
 
 <body>
-    <header>
-        <img style="width: 200px" src="./assets/logo-4.png" alt="logo" />
-        <nav>
-            <ul>
+    <header class="header">
+        <img class="logo" id="logo-2" src="./assets/logo-4.png" alt="logo" />
+        <nav class="navbar">
+            <ul class="navbar-list">
                 <li><a href="#">Courses</a> </li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Login</a></li>
             </ul>
         </nav>
+        <input type="checkbox" id="toggle-menu" class="toggle-menu" hidden>
+        <label for="toggle-menu" class="menu-btn">
+            <i class="fa fas fa-bars"></i>
+        </label>
     </header>
 
-    <main>
-        <section>
+    <main class="course-details-container">
+        <section class="course-basic-details">
             <h2>Course basic details</h2>
 
             <article>
-                <h3>Fundamentals of nuclear chemistry</h3>
-                <p>Karthik</p>
-                <p>Nuclear chemistry is a branch of chemistry that
-                    deals with the study of the atomic nucleus,
-                    which is the central part of an atom
-                    that contains protons and neutrons.</p>
+                <img class="course-thumbnail2" src="./assets/course-1.webp" alt="course-thumbnail">
+                <div class="course-details">
+                    <h3>Fundamentals of nuclear chemistry</h3>
+                    <span>Karthik | Chemistry</span>
+                    <p>Nuclear chemistry is a branch of chemistry that
+                        deals with the study of the atomic nucleus,
+                        which is the central part of an atom
+                        that contains protons and neutrons.
+                    </p>
+                </div>
             </article>
         </section>
 
-        <section>
+        <section class="course-objectives">
             <h2>Course objectives</h2>
 
             <article>
@@ -45,12 +56,12 @@
             </article>
         </section>
 
-        <section>
+        <section class="course-content">
             <h2>Topics covered</h2>
 
             <div>
                 <p>Introduction to nuclear chemistry</p>
-                <video width="400px" controls controlsList="nodownload">
+                <video class="course-video" controls controlsList="nodownload">
                     <source src="./assets/course-video.mp4">
                 </video>
             </div>
@@ -60,6 +71,19 @@
     <footer>
         <p>Learn Plus @ 2024</p>
     </footer>
+
+    <script>
+        const toggleMenu = document.getElementById('toggle-menu');
+        const navbar = document.querySelector('.navbar');
+
+        toggleMenu.addEventListener('change', () => {
+            if (toggleMenu.checked) {
+                navbar.style.left = '0%';
+            } else {
+                navbar.style.left = '100%';
+            }
+        });
+    </script>
 </body>
 
 </html>
